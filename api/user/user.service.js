@@ -15,6 +15,8 @@ module.exports = {
 
 async function query(filterBy = {}) {
     const criteria = _buildCriteria(filterBy)
+    // const criteria = ''
+
     try {
         const collection = await dbService.getCollection('user')
         var users = await collection.find(criteria).toArray()
@@ -25,6 +27,7 @@ async function query(filterBy = {}) {
             // user.createdAt = Date.now() - (1000 * 60 * 60 * 24 * 3) // 3 days ago
             return user
         })
+        console.log(users)
         return users
     } catch (err) {
         logger.error('cannot find users', err)
@@ -50,13 +53,13 @@ async function getById(userId) {
         throw err
     }
 }
-async function getByUsername(username) {
+async function getByUsername(fullname) {
     try {
         const collection = await dbService.getCollection('user')
-        const user = await collection.findOne({ username })
+        const user = await collection.findOne({ fullname })
         return user
     } catch (err) {
-        logger.error(`while finding user ${username}`, err)
+        logger.error(`while finding user ${fullname}`, err)
         throw err
     }
 }
@@ -76,9 +79,10 @@ async function update(user) {
         // peek only updatable fields!
         const userToSave = {
             _id: ObjectId(user._id), // needed for the returnd obj
-            username: user.username,
             fullname: user.fullname,
-            score: user.score,
+            password: user.password,
+            email: user.email,
+            activityLog: user.activityLog,
         }
         const collection = await dbService.getCollection('user')
         await collection.updateOne({ _id: userToSave._id }, { $set: userToSave })
@@ -93,10 +97,10 @@ async function add(user) {
     try {
         // peek only updatable fields!
         const userToAdd = {
-            username: user.username,
-            password: user.password,
             fullname: user.fullname,
-            score: 100
+            password: user.password,
+            email: user.email,
+            avtivityLog: []
         }
         const collection = await dbService.getCollection('user')
         await collection.insertOne(userToAdd)
