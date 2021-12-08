@@ -252,7 +252,7 @@ async function createBoard() {
               ],
             },
             {
-              id: "t302",
+              id: "t402",
               title: "Help me",
               description: "description",
               comments: [
@@ -309,7 +309,7 @@ async function createBoard() {
           title: "Group 4",
           tasks: [
             {
-              id: "t01",
+              id: "501",
               title: "Do that",
               labelId: "Done",
               members: [
@@ -328,7 +328,7 @@ async function createBoard() {
               ],
             },
             {
-              id: "t302",
+              id: "t502",
               title: "Help me",
               description: "description",
               comments: [
@@ -385,7 +385,7 @@ async function createBoard() {
           title: "Group 5",
           tasks: [
             {
-              id: "t01",
+              id: "601",
               title: "Do that",
               labelId: "Done",
               members: [
@@ -404,7 +404,7 @@ async function createBoard() {
               ],
             },
             {
-              id: "t302",
+              id: "t602",
               title: "Help me",
               description: "description",
               comments: [
