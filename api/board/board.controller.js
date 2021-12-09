@@ -28,6 +28,7 @@ async function getBoardById(req, res) {
     }
   }
 
+
 // POST (add board)
 async function addBoard(req, res) {
     try {
