@@ -22,17 +22,8 @@ function connectSockets(http, session) {
             socket.join(boardId)
             socket.watchedBoard = boardId
         })
-<<<<<<< HEAD
-        socket.on('chat newMsg', msg => {
-            // console.log('Emitting Chat msg', msg);
-            // emits to all sockets:
-            // gIo.emit('chat addMsg', msg)
-            // emits only to sockets in the same room
-            gIo.to(socket.myTopic).emit('chat addMsg', msg)
-=======
         socket.on('update board', board => {
             gIo.to(socket.watchedBoard).emit('board updated', board)
->>>>>>> ca772ffd6103869436726960dc455457a35b4f88
         })
 
         socket.on('user-watch', userId => {
