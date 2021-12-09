@@ -92,6 +92,7 @@ function _buildCriteria(filterBy) {
 }
 
 
+
 function _buildSortCriteria(filterBy) {
   const sortCriteria = {};
   if (filterBy.sort === "Name") sortCriteria.name = 1;
