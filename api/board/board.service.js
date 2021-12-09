@@ -35,7 +35,10 @@ async function add(board) {
   try {
     const collection = await dbService.getCollection('board')
     var currBoard = await collection.insertOne(board)
+<<<<<<< HEAD
     // console.log(currBoard);
+=======
+>>>>>>> ca772ffd6103869436726960dc455457a35b4f88
     return board;
   } catch (err) {
     logger.error('cannot insert board', err)
@@ -73,7 +76,6 @@ async function getById(boardId) {
 
 function _buildCriteria(filterBy) {
   const criteria = {};
-  // console.log("before filter", filterBy);
   if (filterBy.searchKey) {
     const regex = new RegExp(filterBy.searchKey, "i");
     criteria.name = { $regex: regex };
@@ -92,6 +94,7 @@ function _buildCriteria(filterBy) {
 }
 
 
+
 function _buildSortCriteria(filterBy) {
   const sortCriteria = {};
   if (filterBy.sort === "Name") sortCriteria.name = 1;
@@ -104,7 +107,10 @@ function _buildSortCriteria(filterBy) {
 // createBoard()
 async function createBoard() {
   const collection = await dbService.getCollection('board')
+<<<<<<< HEAD
   // console.log(collection);
+=======
+>>>>>>> ca772ffd6103869436726960dc455457a35b4f88
   const id = ObjectId("61ae5ac3ac14464cd8b38e5b")
   // var currBoard = await collection.updateOne({ _id: id },{$set:{
   var currBoard = await collection.insertOne(

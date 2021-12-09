@@ -20,7 +20,6 @@ function isError(e) {
 
 function doLog(level, ...args) {
 
-    // console.log('LOGGER:', args);
     const strs = args.map(arg =>
         (typeof arg === 'string' || isError(arg)) ? arg : JSON.stringify(arg)
     )
@@ -30,7 +29,10 @@ function doLog(level, ...args) {
     const sessionId = store?.sessionId
     const sid = sessionId ? `(sid: ${sessionId})` : ''
     line = `${getTime()} - ${level} - ${line} ${sid}\n`
+<<<<<<< HEAD
     // console.log(line)
+=======
+>>>>>>> ca772ffd6103869436726960dc455457a35b4f88
     fs.appendFileSync('./logs/backend.log', line)
 }
 
