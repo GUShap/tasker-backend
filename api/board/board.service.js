@@ -35,10 +35,6 @@ async function add(board) {
   try {
     const collection = await dbService.getCollection('board')
     var currBoard = await collection.insertOne(board)
-<<<<<<< HEAD
-    // console.log(currBoard);
-=======
->>>>>>> ca772ffd6103869436726960dc455457a35b4f88
     return board;
   } catch (err) {
     logger.error('cannot insert board', err)
@@ -107,10 +103,6 @@ function _buildSortCriteria(filterBy) {
 // createBoard()
 async function createBoard() {
   const collection = await dbService.getCollection('board')
-<<<<<<< HEAD
-  // console.log(collection);
-=======
->>>>>>> ca772ffd6103869436726960dc455457a35b4f88
   const id = ObjectId("61ae5ac3ac14464cd8b38e5b")
   // var currBoard = await collection.updateOne({ _id: id },{$set:{
   var currBoard = await collection.insertOne(
