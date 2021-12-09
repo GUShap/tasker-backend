@@ -49,7 +49,6 @@ async function addBoard(req, res) {
 async function updateBoard(req, res) {
     try {
       const {board} = req.body;
-      // console.log(board);
       const updatedBoard = await boardService.update(board)
       res.json(updatedBoard)
     } catch (err) {
@@ -63,7 +62,6 @@ async function updateBoard(req, res) {
 async function removeBoard(req, res) {
     try {
       const {boardId} = req.params;
-      console.log(boardId);
       const removedId = await boardService.remove(boardId)
       res.send(removedId)
     } catch (err) {
