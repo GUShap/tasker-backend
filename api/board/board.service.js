@@ -5,13 +5,13 @@ const asyncLocalStorage = require('../../services/als.service')
 
 
 
-
 async function query(filterBy = null) {
   try {
     const criteria = _buildCriteria(filterBy);
     const sortCriteria = _buildSortCriteria(filterBy);
     const collection = await dbService.getCollection("board");
     var boards = await collection.find(criteria).sort(sortCriteria).toArray();
+    console.log('boards',boards.map(b=>b));
     return boards;
   } catch (err) {
     logger.error("cannot find boards", err);
@@ -35,7 +35,7 @@ async function add(board) {
   try {
     const collection = await dbService.getCollection('board')
     var currBoard = await collection.insertOne(board)
-    console.log(currBoard);
+    // console.log(currBoard);
     return board;
   } catch (err) {
     logger.error('cannot insert board', err)
@@ -45,7 +45,7 @@ async function add(board) {
 
 async function update(board) {
   try {
-    console.log(board);
+    // console.log(board);
     var id = ObjectId(board._id);
     delete board._id;
     const collection = await dbService.getCollection("board");
@@ -104,7 +104,7 @@ function _buildSortCriteria(filterBy) {
 // createBoard()
 async function createBoard() {
   const collection = await dbService.getCollection('board')
-  console.log(collection);
+  // console.log(collection);
   const id = ObjectId("61ae5ac3ac14464cd8b38e5b")
   // var currBoard = await collection.updateOne({ _id: id },{$set:{
   var currBoard = await collection.insertOne(
