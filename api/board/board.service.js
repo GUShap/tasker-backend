@@ -5,13 +5,13 @@ const asyncLocalStorage = require('../../services/als.service')
 
 
 
-
 async function query(filterBy = null) {
   try {
     const criteria = _buildCriteria(filterBy);
     const sortCriteria = _buildSortCriteria(filterBy);
     const collection = await dbService.getCollection("board");
     var boards = await collection.find(criteria).sort(sortCriteria).toArray();
+    console.log('boards',boards.map(b=>b));
     return boards;
   } catch (err) {
     logger.error("cannot find boards", err);
@@ -44,7 +44,7 @@ async function add(board) {
 
 async function update(board) {
   try {
-    console.log(board);
+    // console.log(board);
     var id = ObjectId(board._id);
     delete board._id;
     const collection = await dbService.getCollection("board");
@@ -505,6 +505,7 @@ async function createBoard() {
       cmpsOrder: [
         "title-picker",
         "status-picker",
+        "priority-picker",
         "member-picker",
         "timeline-picker",
       ],

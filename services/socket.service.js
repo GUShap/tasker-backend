@@ -10,9 +10,9 @@ function connectSockets(http, session) {
         }
     })
     gIo.on('connection', socket => {
-        console.log('New socket', socket.id)
+        // console.log('New socket', socket.id)
         socket.on('disconnect', socket => {
-            console.log('Someone disconnected')
+            // console.log('Someone disconnected')
         })
         socket.on('watch board', boardId => {
             if (socket.watchedBoard === boardId) return;
@@ -57,7 +57,7 @@ async function emitToUser({ type, data, userId }) {
 
 // Send to all sockets BUT not the current socket 
 async function broadcast({ type, data, room = null, userId }) {
-    console.log('BROADCASTING', JSON.stringify(arguments));
+    // console.log('BROADCASTING', JSON.stringify(arguments));
     const excludedSocket = await _getUserSocket(userId)
     if (!excludedSocket) {
         // logger.debug('Shouldnt happen, socket not found')
@@ -90,11 +90,11 @@ async function _getAllSockets() {
 
 async function _printSockets() {
     const sockets = await _getAllSockets()
-    console.log(`Sockets: (count: ${sockets.length}):`)
+    // console.log(`Sockets: (count: ${sockets.length}):`)
     sockets.forEach(_printSocket)
 }
 function _printSocket(socket) {
-    console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`)
+    // console.log(`Socket - socketId: ${socket.id} userId: ${socket.userId}`)
 }
 
 module.exports = {
