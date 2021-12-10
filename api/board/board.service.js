@@ -502,6 +502,7 @@ async function createBoard() {
       cmpsOrder: [
         "title-picker",
         "status-picker",
+        "priority-picker",
         "member-picker",
         "timeline-picker",
       ],
