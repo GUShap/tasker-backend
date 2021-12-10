@@ -151,7 +151,7 @@ async function createBoard() {
             {
               id: "t101",
               title: "Replace logo",
-              labelId: "Done",
+              status: "Done",
               description: "description",
               comments: [
                 {
@@ -179,7 +179,7 @@ async function createBoard() {
             {
               id: "t102",
               title: "Have to have full CRUD!",
-              labelId: "Work",
+              status: "Work",
               members: [
                 {
                   _id: "u101",
@@ -192,7 +192,7 @@ async function createBoard() {
             {
               id: "t103",
               title: "Let's do Dungeon & Dragons ",
-              labelId: "Stuck",
+              status: "Stuck",
               members: [
                 {
                   _id: "u101",
@@ -214,12 +214,12 @@ async function createBoard() {
             {
               id: "t201",
               title: "Replace logo",
-              labelId: "Stuck",
+              status: "Stuck",
             },
             {
               id: "t202",
               title: "Add Samples",
-              labelId: "Work",
+              status: "Work",
             },
           ],
           style: {
@@ -233,7 +233,7 @@ async function createBoard() {
             {
               id: "t301",
               title: "Do that",
-              labelId: "Done",
+              status: "Done",
               members: [
                 {
                   _id: "u102",
@@ -286,7 +286,7 @@ async function createBoard() {
                   imgUrl: "guy-img.jpeg",
                 },
               ],
-              labelId: "Done",
+              status: "Done",
               createdAt: 1590999730348,
               dueDate: 16156215211,
               byMember: {
@@ -309,7 +309,7 @@ async function createBoard() {
             {
               id: "501",
               title: "Do that",
-              labelId: "Done",
+              status: "Done",
               members: [
                 {
                   _id: "u102",
@@ -362,7 +362,7 @@ async function createBoard() {
                   imgUrl: "guy-img.jpeg",
                 },
               ],
-              labelId: "Done",
+              status: "Done",
               createdAt: 1590999730348,
               dueDate: 16156215211,
               byMember: {
@@ -385,7 +385,7 @@ async function createBoard() {
             {
               id: "601",
               title: "Do that",
-              labelId: "Done",
+              status: "Done",
               members: [
                 {
                   _id: "u102",
@@ -438,7 +438,7 @@ async function createBoard() {
                   imgUrl: "guy-img.jpeg",
                 },
               ],
-              labelId: "Done",
+              status: "Done",
               createdAt: 1590999730348,
               dueDate: 16156215211,
               byMember: {
