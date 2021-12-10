@@ -11,7 +11,7 @@ async function query(filterBy = null) {
     const sortCriteria = _buildSortCriteria(filterBy);
     const collection = await dbService.getCollection("board");
     var boards = await collection.find(criteria).sort(sortCriteria).toArray();
-    console.log('boards',boards.map(b=>b));
+    // console.log('boards',boards.map(b=>b));
     return boards;
   } catch (err) {
     logger.error("cannot find boards", err);
