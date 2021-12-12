@@ -11,7 +11,6 @@ async function query(filterBy = null) {
     const sortCriteria = _buildSortCriteria(filterBy);
     const collection = await dbService.getCollection("board");
     var boards = await collection.find(criteria).sort(sortCriteria).toArray();
-    console.log('boards',boards.map(b=>b));
     return boards;
   } catch (err) {
     logger.error("cannot find boards", err);
@@ -113,7 +112,7 @@ async function createBoard() {
       createdBy: {
         _id: "u101",
         fullname: "Guy Shapira",
-        imgUrl: "guy-img.jpeg",
+        imgUrl: "guy-img.jpg",
       },
       style: {},
       labels: [
@@ -129,7 +128,7 @@ async function createBoard() {
           "password": 12345,
           "fullname": "Guy Shapira",
           "email":"sundos@gmail.com",
-          "imgUrl": "guy-img.jpeg",
+          "imgUrl": "guy-img.jpg",
         },
         {
           "username": "Sundos",
@@ -164,7 +163,7 @@ async function createBoard() {
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
                 {
@@ -174,7 +173,7 @@ async function createBoard() {
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -188,7 +187,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
             },
@@ -264,7 +263,7 @@ async function createBoard() {
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -286,7 +285,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
               status: "Done",
@@ -296,7 +295,7 @@ async function createBoard() {
                 _id: "u101",
                 username: "Guy",
                 fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpeg",
+                imgUrl: "guy-img.jpg",
               },
               style: {},
             },
@@ -340,7 +339,7 @@ async function createBoard() {
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -362,7 +361,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
               status: "Done",
@@ -372,7 +371,7 @@ async function createBoard() {
                 _id: "u101",
                 username: "Guy",
                 fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpeg",
+                imgUrl: "guy-img.jpg",
               },
               style: {},
             },
@@ -416,7 +415,7 @@ async function createBoard() {
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -438,7 +437,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
               status: "Done",
@@ -448,7 +447,7 @@ async function createBoard() {
                 _id: "u101",
                 username: "Guy",
                 fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpeg",
+                imgUrl: "guy-img.jpg",
               },
               style: {},
             },
@@ -466,7 +465,7 @@ async function createBoard() {
           byMember: {
             _id: "u101",
             fullname: "Guy Shapira",
-            imgUrl: "guy-img.jpeg",
+            imgUrl: "guy-img.jpg",
           },
           task: {
             id: "t101",
@@ -480,7 +479,7 @@ async function createBoard() {
           byMember: {
             _id: "u101",
             fullname: "Guy Shapira",
-            imgUrl: "guy-img.jpeg",
+            imgUrl: "guy-img.jpg",
           },
           task: {
             id: "t101",
@@ -494,7 +493,7 @@ async function createBoard() {
           byMember: {
             _id: "u101",
             fullname: "Guy Shapira",
-            imgUrl: "guy-img.jpeg",
+            imgUrl: "guy-img.jpg",
           },
           task: {
             id: "t101",

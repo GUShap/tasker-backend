@@ -23,6 +23,7 @@ function connectSockets(http, session) {
             socket.watchedBoard = boardId
         })
         socket.on('board from store', board => {
+            console.log('board from store',board.title)
             gIo.to(socket.watchedBoard).emit('board updated', board)
         })
 
