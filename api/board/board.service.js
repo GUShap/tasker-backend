@@ -95,355 +95,450 @@ async function createBoard() {
   // var currBoard = await collection.updateOne({ _id: id },{$set:{
   var currBoard = await collection.insertOne(
     {
-      title: "Sprint 4",
-      createdAt: 1589983468418,
-      description: "Track your action items and improve for next sprint",
-      createdBy: {
-        _id: "u101",
-        fullname: "Guy Shapira",
-        imgUrl: "guy-img.jpg",
+      "title" : "Sprint 4",
+      "createdAt" : 1589983468418.0,
+      "description" : "Track your action items and improve for next sprint",
+      "createdBy" : {
+          "_id" : "u101",
+          "fullname" : "Guy Shapira",
+          "imgUrl" : "guy-img.jpg"
       },
-      style: {},
-      labels: [
-        {
-          id: "l101",
-          title: "Done",
-          color: "#61bd4f",
-        },
+      "style" : {},
+      "labels" : [ 
+          {
+              "id" : "l101",
+              "title" : "Done",
+              "color" : "#61bd4f"
+          }
       ],
-      members: [
-        {
-          "_id":"61b246302e8f89202bd83309",
-          "username": "Guy",
-          "password": 12345,
-          "fullname": "Guy Shapira",
-          "email":"sundos@gmail.com",
-          "imgUrl": "guy-img.jpg",
-        },
-        {
-          "_id":"61b246112e8f89202bd83308",
-          "username": "Sundos",
-          "password": 12345,
-          "fullname": "Sundos Gutty",
-          "email":"sundos@gmail.com",
-          "imgUrl": "sundos-img.jpg",
-        },
-        {
-          "_id":"61b245d82e8f89202bd83307",
-          "username": "Ishay",
-          "password": 12345,
-          "fullname": "Ishay Nitzan",
-          "email":"sundos@gmail.com",
-          "imgUrl": "ishay-img.jpeg",
-        },
+      "members" : [  
+          {
+              "username" : "Sundos",
+              "password" : 12345,
+              "fullname" : "Sundos Gutty",
+              "email" : "sundos@gmail.com",
+              "imgUrl" : "sundos-img.jpg"
+          }, 
+          {
+              "username" : "Ishay",
+              "password" : 12345,
+              "fullname" : "Ishay Nitzan",
+              "email" : "sundos@gmail.com",
+              "imgUrl" : "ishay-img.jpeg"
+          }
       ],
-      groups: [
-        {
-          id: "g101",
-          title: "Group 1",
-          tasks: [
-            {
-              id: "t101",
-              title: "Replace logo",
-              status: "Done",
-              description: "description",
-              comments: [
-                {
-                  id: "Z666m",
-                  txt: "also @yaronb please CR this",
-                  createdAt: 1638753114117,
-                  byMember: {
-                    _id: "u101",
-                    fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpg",
-                  },
-                },
-                {
-                  id: "Z3Pnm",
-                  txt: "also @yaronb please CR this",
-                  createdAt: 1620999817436,
-                  byMember: {
-                    _id: "u101",
-                    fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpg",
-                  },
-                },
+      "groups" : [ 
+          {
+              "id" : "g101",
+              "title" : "Team Tom",
+              "tasks" : [ 
+                  {
+                      "id" : "t102",
+                      "title" : "Make test data",
+                      "status" : "Done",
+                      "members" : [ 
+                          {
+                              "username" : "Sundos",
+                              "password" : 12345,
+                              "fullname" : "Sundos Gutty",
+                              "email" : "sundos@gmail.com",
+                              "imgUrl" : "sundos-img.jpg"
+                          }
+                      ],
+                      "priority" : "High",
+                      "timeline" : [ 
+                          "2021-12-05T22:00:00.000Z", 
+                          "2021-12-08T22:00:00.000Z"
+                      ]
+                  }, 
+                  {
+                      "id" : "t101",
+                      "title" : "Send the prototype project",
+                      "status" : "Work",
+                      "description" : "description",
+                      "comments" : [ 
+                          {
+                              "id" : "ZFaIN",
+                              "txt" : "123",
+                              "createdAt" : 1639302815091.0,
+                              "byMember" : {
+                                  "_id" : "61b245d82e8f89202bd83307",
+                                  "username" : "Ishay",
+                                  "fullname" : "Ishay Nitzan",
+                                  "email" : "sundos@gmail.com",
+                                  "imgUrl" : "ishay-img.jpeg"
+                              }
+                          }, 
+                          {
+                              "id" : "ZdPnm",
+                              "txt" : "also @yaronb please CR this",
+                              "createdAt" : 1638753114117.0,
+                              "byMember" : {
+                                  "_id" : "u101",
+                                  "fullname" : "Guy Shapira",
+                                  "imgUrl" : "guy-img.jpg"
+                              }
+                          }, 
+                          {
+                              "id" : "ZdPnm",
+                              "txt" : "also @yaronb please CR this",
+                              "createdAt" : 1620999817436.0,
+                              "byMember" : {
+                                  "_id" : "u101",
+                                  "fullname" : "Guy Shapira",
+                                  "imgUrl" : "guy-img.jpg"
+                              }
+                          }
+                      ],
+                      "priority" : "Medium",
+                      "members" : [ 
+                          {
+                              "username" : "Sundos",
+                              "password" : 12345,
+                              "fullname" : "Sundos Gutty",
+                              "email" : "sundos@gmail.com",
+                              "imgUrl" : "sundos-img.jpg"
+                          }
+                      ],
+                      "timeline" : [ 
+                          "2021-12-10T22:00:00.000Z", 
+                          "2021-12-13T22:00:00.000Z"
+                      ]
+                  }, 
+                  {
+                      "id" : "t103",
+                      "title" : "Improve connectable",
+                      "status" : "Done",
+                      "members" : [ 
+                          {
+                              "_id" : "u101",
+                              "username" : "Ishay",
+                              "fullname" : "Ishay Nitzan",
+                              "imgUrl" : "ishay-img.jpeg"
+                          }
+                      ],
+                      "priority" : "Low",
+                      "timeline" : [ 
+                          "2021-12-10T22:00:00.000Z", 
+                          "2021-12-14T22:00:00.000Z"
+                      ]
+                  }, 
+                  {
+                      "id" : "8NeM9",
+                      "title" : "add the new cover",
+                      "prioraty" : null,
+                      "status" : "Work",
+                      "timeline" : [ 
+                          "2021-12-12T22:00:00.000Z", 
+                          "2021-12-16T22:00:00.000Z"
+                      ],
+                      "members" : null,
+                      "priority" : "High"
+                  }
               ],
-            },
-            {
-              id: "t102",
-              title: "Have to have full CRUD!",
-              status: "Work",
-              members: [
-                {
-                  _id: "u101",
-                  username: "Guy",
-                  fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpg",
-                },
+              "style" : {
+                  "color" : "#579bfc"
+              }
+          }, 
+          {
+              "id" : "g102",
+              "title" : "Design Team",
+              "tasks" : [ 
+                  {
+                      "id" : "t104",
+                      "title" : "Finalize project",
+                      "status" : "Done",
+                      "members" : [ 
+                          {
+                              "_id" : "u101",
+                              "username" : "Ishay",
+                              "fullname" : "Ishay Nitzan",
+                              "imgUrl" : "ishay-img.jpeg"
+                          }
+                      ],
+                      "priority" : "Low",
+                      "timeline" : [ 
+                          "2021-11-30T22:00:00.000Z", 
+                          "2021-12-06T22:00:00.000Z"
+                      ]
+                  }, 
+                  {
+                      "id" : "t201",
+                      "title" : "Change color plate for logo",
+                      "status" : "Stuck",
+                      "priority" : "Medium",
+                      "timeline" : [ 
+                          "2021-12-07T22:00:00.000Z", 
+                          "2021-12-10T22:00:00.000Z"
+                      ]
+                  }, 
+                  {
+                      "id" : "t202",
+                      "title" : "Recruit new members",
+                      "status" : "Work",
+                      "priority" : "High",
+                      "timeline" : [ 
+                          "2021-12-10T22:00:00.000Z", 
+                          "2021-12-13T22:00:00.000Z"
+                      ]
+                  }
               ],
-            },
-            {
-              id: "t103",
-              title: "Let's do Dungeon & Dragons ",
-              status: "Stuck",
-              members: [
-                {
-                  _id: "u101",
-                  username: "Ishay",
-                  fullname: "Ishay Nitzan",
-                  imgUrl: "ishay-img.jpeg",
-                },
+              "style" : {
+                  "color" : "#579bfc"
+              }
+          }, 
+          {
+              "id" : "g103",
+              "title" : "Marketing Team",
+              "tasks" : [ 
+                  {
+                      "id" : "t301",
+                      "title" : "make new spreadsheet",
+                      "status" : "Done",
+                      "members" : [ 
+                          {
+                              "_id" : "u102",
+                              "username" : "Sundos",
+                              "fullname" : "Sundos Gutty",
+                              "imgUrl" : "sundos-img.jpg"
+                          }, 
+                          {
+                              "_id" : "u103",
+                              "username" : "Ishay",
+                              "fullname" : "Ishay Nitzan",
+                              "imgUrl" : "ishay-img.jpeg"
+                          }
+                      ],
+                      "timeline" : [ 
+                          "2021-12-11T22:00:00.000Z", 
+                          "2021-12-14T22:00:00.000Z"
+                      ],
+                      "priority" : "High"
+                  }, 
+                  {
+                      "id" : "t402",
+                      "title" : "Contact NY base for leads",
+                      "description" : "description",
+                      "comments" : [ 
+                          {
+                              "id" : "ZdPnm",
+                              "txt" : "also @yaronb please CR this",
+                              "createdAt" : 1590999817436.0,
+                              "byMember" : {
+                                  "_id" : "u101",
+                                  "fullname" : "Guy Shapira",
+                                  "imgUrl" : "guy-img.jpg"
+                              }
+                          }
+                      ],
+                      "checklists" : [ 
+                          {
+                              "id" : "YEhmF",
+                              "title" : "Checklist",
+                              "todos" : [ 
+                                  {
+                                      "id" : "212jX",
+                                      "title" : "To Do 1",
+                                      "isDone" : false
+                                  }
+                              ]
+                          }
+                      ],
+                      "members" : [],
+                      "status" : "Work",
+                      "createdAt" : 1590999730348.0,
+                      "dueDate" : 16156215211.0,
+                      "byMember" : {
+                          "_id" : "u101",
+                          "username" : "Guy",
+                          "fullname" : "Guy Shapira",
+                          "imgUrl" : "guy-img.jpg"
+                      },
+                      "style" : {},
+                      "timeline" : [ 
+                          "2021-12-12T22:00:00.000Z", 
+                          "2021-12-17T22:00:00.000Z"
+                      ],
+                      "priority" : "Medium"
+                  }
               ],
-            },
-          ],
-          style: {
-            color: "#579bfc",
-          },
-        },
-        {
-          id: "g102",
-          title: "Group 2",
-          tasks: [
-            {
-              id: "t201",
-              title: "Replace logo",
-              status: "Stuck",
-            },
-            {
-              id: "t202",
-              title: "Add Samples",
-              status: "Work",
-            },
-          ],
-          style: {
-            color: "#579bfc",
-          },
-        },
-        {
-          id: "g103",
-          title: "Group 3",
-          tasks: [
-            {
-              id: "t301",
-              title: "Do that",
-              status: "Done",
-              members: [
-                {
-                  _id: "u102",
-                  username: "Sundos",
-                  fullname: "Sundos Gutty",
-                  imgUrl: "sundos-img.jpg",
-                },
-                {
-                  _id: "u103",
-                  username: "Ishay",
-                  fullname: "Ishay Nitzan",
-                  imgUrl:"ishay-img.jpeg"
-                },
+              "style" : {
+                  "color" : "#579bfc"
+              }
+          }, 
+          {
+              "id" : "g104",
+              "title" : "Office General",
+              "tasks" : [ 
+                  {
+                      "id" : "501",
+                      "title" : "The coffee machine is great!",
+                      "status" : "Done",
+                      "members" : [ 
+                          {
+                              "_id" : "u102",
+                              "username" : "Sundos",
+                              "fullname" : "Sundos Gutty",
+                              "imgUrl" : "sundos-img.jpg"
+                          }, 
+                          {
+                              "_id" : "u103",
+                              "username" : "Ishay",
+                              "fullname" : "Ishay Nitzan",
+                              "imgUrl" : "ishay-img.jpeg"
+                          }
+                      ],
+                      "timeline" : [ 
+                          "2021-12-06T22:00:00.000Z", 
+                          "2021-12-09T22:00:00.000Z"
+                      ],
+                      "priority" : "Medium"
+                  }, 
+                  {
+                      "id" : "t502",
+                      "title" : "Water the plants",
+                      "description" : "description",
+                      "comments" : [ 
+                          {
+                              "id" : "ZdPnm",
+                              "txt" : "also @yaronb please CR this",
+                              "createdAt" : 1590999817436.0,
+                              "byMember" : {
+                                  "_id" : "u101",
+                                  "fullname" : "Guy Shapira",
+                                  "imgUrl" : "guy-img.jpg"
+                              }
+                          }
+                      ],
+                      "checklists" : [ 
+                          {
+                              "id" : "YEhmF",
+                              "title" : "Checklist",
+                              "todos" : [ 
+                                  {
+                                      "id" : "212jX",
+                                      "title" : "To Do 1",
+                                      "isDone" : false
+                                  }
+                              ]
+                          }
+                      ],
+                      "members" : [ 
+                          {
+                              "username" : "Ishay",
+                              "password" : 12345,
+                              "fullname" : "Ishay Nitzan",
+                              "email" : "sundos@gmail.com",
+                              "imgUrl" : "ishay-img.jpeg"
+                          }
+                      ],
+                      "status" : "Done",
+                      "createdAt" : 1590999730348.0,
+                      "dueDate" : 16156215211.0,
+                      "byMember" : {
+                          "_id" : "u101",
+                          "username" : "Guy",
+                          "fullname" : "Guy Shapira",
+                          "imgUrl" : "guy-img.jpg"
+                      },
+                      "style" : {},
+                      "timeline" : [ 
+                          "2021-12-08T22:00:00.000Z", 
+                          "2021-12-11T22:00:00.000Z"
+                      ]
+                  }
               ],
-            },
-            {
-              id: "t402",
-              title: "Help me",
-              description: "description",
-              comments: [
-                {
-                  id: "3333m",
-                  txt: "also @yaronb please CR this",
-                  createdAt: 1590999817436.0,
-                  byMember: {
-                    _id: "u101",
-                    fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpg",
-                  },
-                },
+              "style" : {
+                  "color" : "#579bfc"
+              }
+          }, 
+          {
+              "id" : "g105",
+              "title" : "Back Office",
+              "tasks" : [ 
+                  {
+                      "id" : "601",
+                      "title" : "Send fiscal quarter",
+                      "status" : "Done",
+                      "members" : [ 
+                          {
+                              "_id" : "u102",
+                              "username" : "Sundos",
+                              "fullname" : "Sundos Gutty",
+                              "imgUrl" : "sundos-img.jpg"
+                          }, 
+                          {
+                              "_id" : "u103",
+                              "username" : "Ishay",
+                              "fullname" : "Ishay Nitzan",
+                              "imgUrl" : "ishay-img.jpeg"
+                          }
+                      ],
+                      "priority" : "Low"
+                  }, 
+                  {
+                      "id" : "t602",
+                      "title" : "Get server up and running",
+                      "description" : "description",
+                      "comments" : [ 
+                          {
+                              "id" : "ZdPnm",
+                              "txt" : "also @yaronb please CR this",
+                              "createdAt" : 1590999817436.0,
+                              "byMember" : {
+                                  "_id" : "u101",
+                                  "fullname" : "Guy Shapira",
+                                  "imgUrl" : "guy-img.jpg"
+                              }
+                          }
+                      ],
+                      "checklists" : [ 
+                          {
+                              "id" : "YEhmF",
+                              "title" : "Checklist",
+                              "todos" : [ 
+                                  {
+                                      "id" : "212jX",
+                                      "title" : "To Do 1",
+                                      "isDone" : false
+                                  }
+                              ]
+                          }
+                      ],
+                      "members" : [ 
+                          {
+                              "username" : "Sundos",
+                              "password" : 12345,
+                              "fullname" : "Sundos Gutty",
+                              "email" : "sundos@gmail.com",
+                              "imgUrl" : "sundos-img.jpg"
+                          }
+                      ],
+                      "status" : "Done",
+                      "createdAt" : 1590999730348.0,
+                      "dueDate" : 16156215211.0,
+                      "byMember" : {
+                          "_id" : "u101",
+                          "username" : "Guy",
+                          "fullname" : "Guy Shapira",
+                          "imgUrl" : "guy-img.jpg"
+                      },
+                      "style" : {}
+                  }
               ],
-              checklists: [
-                {
-                  id: "YEhmF",
-                  title: "Checklist",
-                  todos: [
-                    {
-                      id: "212jX",
-                      title: "To Do 1",
-                      isDone: false,
-                    },
-                  ],
-                },
-              ],
-              members: [
-                {
-                  _id: "u101",
-                  username: "Guy",
-                  fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpg",
-                },
-              ],
-              status: "Done",
-              createdAt: 1590999730348,
-              dueDate: 16156215211,
-              byMember: {
-                _id: "u101",
-                username: "Guy",
-                fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpg",
-              },
-              style: {},
-            },
-          ],
-          style: {
-            color: "#579bfc",
-          },
-        },
-        {
-          id: "g104",
-          title: "Group 4",
-          tasks: [
-            {
-              id: "501",
-              title: "Do that",
-              status: "Done",
-              members: [
-                {
-                  _id: "u102",
-                  username: "Sundos",
-                  fullname: "Sundos Gutty",
-                  imgUrl:"sundos-img.jpg"
-                },
-                {
-                  _id: "u103",
-                  username: "Ishay",
-                  fullname: "Ishay Nitzan",
-                  imgUrl:"ishay-img.jpeg"
-                },
-              ],
-            },
-            {
-              id: "t502",
-              title: "Help me",
-              description: "description",
-              comments: [
-                {
-                  id: "Z0000",
-                  txt: "also @yaronb please CR this",
-                  createdAt: 1590999817436.0,
-                  byMember: {
-                    _id: "u101",
-                    fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpg",
-                  },
-                },
-              ],
-              members: [
-                {
-                  _id: "u101",
-                  username: "Guy",
-                  fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpg",
-                },
-              ],
-              status: "Done",
-              createdAt: 1590999730348,
-              dueDate: 16156215211,
-              byMember: {
-                _id: "u101",
-                username: "Guy",
-                fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpg",
-              },
-              style: {},
-            },
-          ],
-          style: {
-            color: "#579bfc",
-          },
-        },
-        {
-          id: "g105",
-          title: "Group 5",
-          tasks: [
-            {
-              id: "601",
-              title: "Do that",
-              status: "Done",
-              members: [
-                {
-                  _id: "u102",
-                  username: "Sundos",
-                  fullname: "Sundos Gutty",
-                  imgUrl:"sundos-img.jpg"
-                },
-                {
-                  _id: "u103",
-                  username: "Ishay",
-                  fullname: "Ishay Nitzan",
-                  imgUrl:"ishay-img.jpeg"
-                },
-              ],
-            },
-            {
-              id: "t602",
-              title: "Help me",
-              description: "description",
-              comments: [
-                {
-                  id: "ePnm",
-                  txt: "also @yaronb please CR this",
-                  createdAt: 1590999817436.0,
-                  byMember: {
-                    _id: "u101",
-                    fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpg",
-                  },
-                },
-              ],
-              checklists: [
-                {
-                  id: "YEhmF",
-                  title: "Checklist",
-                  todos: [
-                    {
-                      id: "212jX",
-                      title: "To Do 1",
-                      isDone: false,
-                    },
-                  ],
-                },
-              ],
-              members: [
-                {
-                  _id: "u101",
-                  username: "Guy",
-                  fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpg",
-                },
-              ],
-              status: "Done",
-              createdAt: 1590999730348,
-              dueDate: 16156215211,
-              byMember: {
-                _id: "u101",
-                username: "Guy",
-                fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpg",
-              },
-              style: {},
-            },
-          ],
-          style: {
-            color: "#579bfc",
-          },
-        },
+              "style" : {
+                  "color" : "#579bfc"
+              }
+          }
       ],
-      cmpsOrder: [
-        "title-picker",
-        "status-picker",
-        "priority-picker",
-        "member-picker",
-        "timeline-picker",
-      ],
-    }
+      "cmpsOrder" : [ 
+          "title-picker", 
+          "status-picker", 
+          "priority-picker", 
+          "member-picker", 
+          "timeline-picker"
+      ]
+  }
   )
 }
 
