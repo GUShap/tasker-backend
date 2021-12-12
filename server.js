@@ -6,6 +6,7 @@ const expressSession = require('express-session')
 const app = express()
 const http = require('http').createServer(app)
 
+
 // Express App Config
 const session = expressSession({
     secret: 'coding is amazing',
@@ -49,6 +50,7 @@ connectSockets(http, session)
 
 
 const logger = require('./services/logger.service')
+const { Server } = require('mongodb/lib/core')
 const port = process.env.PORT || 3030
 http.listen(port, () => {
     logger.info('Server is running on port: ' + port)

@@ -43,7 +43,6 @@ async function add(board) {
 
 async function update(board) {
   try {
-    // console.log(board);
     var id = ObjectId(board._id);
     delete board._id;
     const collection = await dbService.getCollection("board");
@@ -75,16 +74,6 @@ function _buildCriteria(filterBy) {
     const regex = new RegExp(filterBy.searchKey, "i");
     criteria.name = { $regex: regex };
   }
-
-  //   if (filterBy.inStock !== '') {
-  //     criteria.inStock = {$eq: JSON.parse(filterBy.inStock)}
-  // }
-
-  //   if (filterBy.labels) {
-  //     criteria.labels = { $eq : filterBy.labels };
-  //   }
-
-  // console.log("after filter :", criteria);
   return criteria;
 }
 
@@ -542,50 +531,6 @@ async function createBoard() {
               }
           }
       ],
-      "activities" : [ 
-          // {
-          //     "id" : "a101",
-          //     "type" : "name",
-          //     "createdAt" : 154514,
-          //     "byMember" : {
-          //         "_id" : "u101",
-          //         "fullname" : "Guy Shapira",
-          //         "imgUrl" : "guy-img.jpg"
-          //     },
-          //     "task" : {
-          //         "id" : "t101",
-          //         "title" : "Replace Logo"
-          //     }
-          // }, 
-          // {
-          //     "id" : "a102",
-          //     "type" : "status",
-          //     "createdAt" : 154514,
-          //     "byMember" : {
-          //         "_id" : "u101",
-          //         "fullname" : "Guy Shapira",
-          //         "imgUrl" : "guy-img.jpg"
-          //     },
-          //     "task" : {
-          //         "id" : "t101",
-          //         "title" : "bipboop"
-          //     }
-          // }, 
-          // {
-          //     "id" : "a103",
-          //     "type" : "member",
-          //     "createdAt" : 154514,
-          //     "byMember" : {
-          //         "_id" : "u101",
-          //         "fullname" : "Guy Shapira",
-          //         "imgUrl" : "guy-img.jpg"
-          //     },
-          //     "task" : {
-          //         "id" : "t101",
-          //         "title" : "say Hi"
-          //     }
-          // }
-      ],
       "cmpsOrder" : [ 
           "title-picker", 
           "status-picker", 
@@ -596,9 +541,6 @@ async function createBoard() {
   }
   )
 }
-
-
-
 
 
 module.exports = {
