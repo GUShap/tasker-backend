@@ -11,7 +11,6 @@ async function query(filterBy = null) {
     const sortCriteria = _buildSortCriteria(filterBy);
     const collection = await dbService.getCollection("board");
     var boards = await collection.find(criteria).sort(sortCriteria).toArray();
-    // console.log('boards',boards.map(b=>b));
     return boards;
   } catch (err) {
     logger.error("cannot find boards", err);
@@ -44,7 +43,6 @@ async function add(board) {
 
 async function update(board) {
   try {
-    // console.log(board);
     var id = ObjectId(board._id);
     delete board._id;
     const collection = await dbService.getCollection("board");
@@ -76,16 +74,6 @@ function _buildCriteria(filterBy) {
     const regex = new RegExp(filterBy.searchKey, "i");
     criteria.name = { $regex: regex };
   }
-
-  //   if (filterBy.inStock !== '') {
-  //     criteria.inStock = {$eq: JSON.parse(filterBy.inStock)}
-  // }
-
-  //   if (filterBy.labels) {
-  //     criteria.labels = { $eq : filterBy.labels };
-  //   }
-
-  // console.log("after filter :", criteria);
   return criteria;
 }
 
@@ -113,7 +101,7 @@ async function createBoard() {
       createdBy: {
         _id: "u101",
         fullname: "Guy Shapira",
-        imgUrl: "guy-img.jpeg",
+        imgUrl: "guy-img.jpg",
       },
       style: {},
       labels: [
@@ -125,13 +113,15 @@ async function createBoard() {
       ],
       members: [
         {
+          "_id":"61b246302e8f89202bd83309",
           "username": "Guy",
           "password": 12345,
           "fullname": "Guy Shapira",
           "email":"sundos@gmail.com",
-          "imgUrl": "guy-img.jpeg",
+          "imgUrl": "guy-img.jpg",
         },
         {
+          "_id":"61b246112e8f89202bd83308",
           "username": "Sundos",
           "password": 12345,
           "fullname": "Sundos Gutty",
@@ -139,6 +129,7 @@ async function createBoard() {
           "imgUrl": "sundos-img.jpg",
         },
         {
+          "_id":"61b245d82e8f89202bd83307",
           "username": "Ishay",
           "password": 12345,
           "fullname": "Ishay Nitzan",
@@ -158,23 +149,23 @@ async function createBoard() {
               description: "description",
               comments: [
                 {
-                  id: "ZdPnm",
+                  id: "Z666m",
                   txt: "also @yaronb please CR this",
                   createdAt: 1638753114117,
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
                 {
-                  id: "ZdPnm",
+                  id: "Z3Pnm",
                   txt: "also @yaronb please CR this",
                   createdAt: 1620999817436,
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -188,7 +179,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
             },
@@ -258,13 +249,13 @@ async function createBoard() {
               description: "description",
               comments: [
                 {
-                  id: "ZdPnm",
+                  id: "3333m",
                   txt: "also @yaronb please CR this",
                   createdAt: 1590999817436.0,
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -286,7 +277,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
               status: "Done",
@@ -296,7 +287,7 @@ async function createBoard() {
                 _id: "u101",
                 username: "Guy",
                 fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpeg",
+                imgUrl: "guy-img.jpg",
               },
               style: {},
             },
@@ -334,27 +325,14 @@ async function createBoard() {
               description: "description",
               comments: [
                 {
-                  id: "ZdPnm",
+                  id: "Z0000",
                   txt: "also @yaronb please CR this",
                   createdAt: 1590999817436.0,
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
-                },
-              ],
-              checklists: [
-                {
-                  id: "YEhmF",
-                  title: "Checklist",
-                  todos: [
-                    {
-                      id: "212jX",
-                      title: "To Do 1",
-                      isDone: false,
-                    },
-                  ],
                 },
               ],
               members: [
@@ -362,7 +340,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
               status: "Done",
@@ -372,7 +350,7 @@ async function createBoard() {
                 _id: "u101",
                 username: "Guy",
                 fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpeg",
+                imgUrl: "guy-img.jpg",
               },
               style: {},
             },
@@ -410,13 +388,13 @@ async function createBoard() {
               description: "description",
               comments: [
                 {
-                  id: "ZdPnm",
+                  id: "ePnm",
                   txt: "also @yaronb please CR this",
                   createdAt: 1590999817436.0,
                   byMember: {
                     _id: "u101",
                     fullname: "Guy Shapira",
-                    imgUrl: "guy-img.jpeg",
+                    imgUrl: "guy-img.jpg",
                   },
                 },
               ],
@@ -438,7 +416,7 @@ async function createBoard() {
                   _id: "u101",
                   username: "Guy",
                   fullname: "Guy Shapira",
-                  imgUrl: "guy-img.jpeg",
+                  imgUrl: "guy-img.jpg",
                 },
               ],
               status: "Done",
@@ -448,57 +426,13 @@ async function createBoard() {
                 _id: "u101",
                 username: "Guy",
                 fullname: "Guy Shapira",
-                imgUrl: "guy-img.jpeg",
+                imgUrl: "guy-img.jpg",
               },
               style: {},
             },
           ],
           style: {
             color: "#579bfc",
-          },
-        },
-      ],
-      activities: [
-        {
-          id: "a101",
-          type: "name",
-          createdAt: 154514,
-          byMember: {
-            _id: "u101",
-            fullname: "Guy Shapira",
-            imgUrl: "guy-img.jpeg",
-          },
-          task: {
-            id: "t101",
-            title: "Replace Logo",
-          },
-        },
-        {
-          id: "a102",
-          type: "status",
-          createdAt: 154514,
-          byMember: {
-            _id: "u101",
-            fullname: "Guy Shapira",
-            imgUrl: "guy-img.jpeg",
-          },
-          task: {
-            id: "t101",
-            title: "bipboop",
-          },
-        },
-        {
-          id: "a103",
-          type: "member",
-          createdAt: 154514,
-          byMember: {
-            _id: "u101",
-            fullname: "Guy Shapira",
-            imgUrl: "guy-img.jpeg",
-          },
-          task: {
-            id: "t101",
-            title: "say Hi",
           },
         },
       ],
@@ -512,9 +446,6 @@ async function createBoard() {
     }
   )
 }
-
-
-
 
 
 module.exports = {

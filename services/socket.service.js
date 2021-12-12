@@ -4,7 +4,7 @@ const logger = require('./logger.service');
 var gIo = null
 
 function connectSockets(http, session) {
-    gIo = require('socket.io')(http, {
+   gIo = require('socket.io')(http, {
         cors: {
             origin: '*',
         }
