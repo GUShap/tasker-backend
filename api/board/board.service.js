@@ -151,7 +151,19 @@ async function createBoard() {
               "timeline": [
                 "2021-12-05T22:00:00.000Z",
                 "2021-12-08T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t101",
@@ -172,7 +184,19 @@ async function createBoard() {
               "timeline": [
                 "2021-12-10T22:00:00.000Z",
                 "2021-12-13T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t103",
@@ -190,7 +214,19 @@ async function createBoard() {
               "timeline": [
                 "2021-12-10T22:00:00.000Z",
                 "2021-12-14T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "8NeM9",
@@ -202,7 +238,19 @@ async function createBoard() {
                 "2021-12-16T22:00:00.000Z"
               ],
               "members": null,
-              "priority": "High"
+              "priority": "High",
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             }
           ],
           "style": {
@@ -229,7 +277,19 @@ async function createBoard() {
               "timeline": [
                 "2021-11-30T22:00:00.000Z",
                 "2021-12-06T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t201",
@@ -239,7 +299,19 @@ async function createBoard() {
               "timeline": [
                 "2021-12-07T22:00:00.000Z",
                 "2021-12-10T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t202",
@@ -249,12 +321,24 @@ async function createBoard() {
               "timeline": [
                 "2021-12-10T22:00:00.000Z",
                 "2021-12-13T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             }
           ],
           "style": {
             "color": "#579bfc"
-          }
+          },
         },
         {
           "id": "g103",
@@ -282,26 +366,25 @@ async function createBoard() {
                 "2021-12-11T22:00:00.000Z",
                 "2021-12-14T22:00:00.000Z"
               ],
-              "priority": "High"
+              "priority": "High",
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t402",
               "title": "Contact NY base for leads",
               "description": "description",
               "comments": [],
-              "checklists": [
-                {
-                  "id": "YEhmF",
-                  "title": "Checklist",
-                  "todos": [
-                    {
-                      "id": "212jX",
-                      "title": "To Do 1",
-                      "isDone": false
-                    }
-                  ]
-                }
-              ],
               "members": [],
               "status": "Work",
               "createdAt": 1590999730348.0,
@@ -317,7 +400,19 @@ async function createBoard() {
                 "2021-12-12T22:00:00.000Z",
                 "2021-12-17T22:00:00.000Z"
               ],
-              "priority": "Medium"
+              "priority": "Medium",
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             }
           ],
           "style": {
@@ -350,7 +445,19 @@ async function createBoard() {
                 "2021-12-06T22:00:00.000Z",
                 "2021-12-09T22:00:00.000Z"
               ],
-              "priority": "Medium"
+              "priority": "Medium",
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t502",
@@ -392,7 +499,19 @@ async function createBoard() {
               "timeline": [
                 "2021-12-08T22:00:00.000Z",
                 "2021-12-11T22:00:00.000Z"
-              ]
+              ],
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             }
           ],
           "style": {
@@ -421,26 +540,25 @@ async function createBoard() {
                   "imgUrl": "ishay-img.jpeg"
                 }
               ],
-              "priority": "Low"
+              "priority": "Low",
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             },
             {
               "id": "t602",
               "title": "Get server up and running",
               "description": "description",
               "comments": [],
-              "checklists": [
-                {
-                  "id": "YEhmF",
-                  "title": "Checklist",
-                  "todos": [
-                    {
-                      "id": "212jX",
-                      "title": "To Do 1",
-                      "isDone": false
-                    }
-                  ]
-                }
-              ],
               "members": [
                 {
                   "username": "Sundos",
@@ -459,7 +577,19 @@ async function createBoard() {
                 "fullname": "Guy Shapira",
                 "imgUrl": "guy-img.jpg"
               },
-              "style": {}
+              "style": {},
+              "seenBy":[ {
+                "username": "Sundos",
+                "password": 12345,
+                "fullname": "Sundos Gutty",
+                "email": "sundos@gmail.com",
+                "imgUrl": "sundos-img.jpg"
+              },{
+                "_id": "u101",
+                "username": "Ishay",
+                "fullname": "Ishay Nitzan",
+                "imgUrl": "ishay-img.jpeg"
+              }]
             }
           ],
           "style": {
