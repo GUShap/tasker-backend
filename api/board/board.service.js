@@ -1,9 +1,7 @@
-const dbService = require('../../services/db.service')
-const ObjectId = require('mongodb').ObjectId
+const dbService = require("../../services/db.service");
+const ObjectId = require("mongodb").ObjectId;
 const logger = require("../../services/logger.service");
-const asyncLocalStorage = require('../../services/als.service')
-
-
+const asyncLocalStorage = require("../../services/als.service");
 
 async function query(filterBy = null) {
   try {
@@ -20,24 +18,23 @@ async function query(filterBy = null) {
 
 async function remove(boardId) {
   try {
-    const collection = await dbService.getCollection('board')
-    const criteria = { _id: ObjectId(boardId) }
-    await collection.deleteOne(criteria)
+    const collection = await dbService.getCollection("board");
+    const criteria = { _id: ObjectId(boardId) };
+    await collection.deleteOne(criteria);
   } catch (err) {
-    logger.error(`cannot remove board ${boardId}`, err)
-    throw err
+    logger.error(`cannot remove board ${boardId}`, err);
+    throw err;
   }
 }
 
-
 async function add(board) {
   try {
-    const collection = await dbService.getCollection('board')
-    var currBoard = await collection.insertOne(board)
+    const collection = await dbService.getCollection("board");
+    var currBoard = await collection.insertOne(board);
     return board;
   } catch (err) {
-    logger.error('cannot insert board', err)
-    throw err
+    logger.error("cannot insert board", err);
+    throw err;
   }
 }
 
@@ -47,7 +44,7 @@ async function update(board) {
     delete board._id;
     const collection = await dbService.getCollection("board");
     await collection.updateOne({ _id: id }, { $set: { ...board } });
-    board._id = id
+    board._id = id;
     return board;
   } catch (err) {
     logger.error(`cannot update board ${board}`, err);
@@ -66,9 +63,8 @@ async function getById(boardId) {
   }
 }
 
-
-
 function _buildCriteria(filterBy) {
+  console.log(filterBy)
   const criteria = {};
   if (filterBy.searchKey) {
     const regex = new RegExp(filterBy.searchKey, "i");
@@ -76,8 +72,6 @@ function _buildCriteria(filterBy) {
   }
   return criteria;
 }
-
-
 
 function _buildSortCriteria(filterBy) {
   const sortCriteria = {};
@@ -90,11 +84,10 @@ function _buildSortCriteria(filterBy) {
 
 // createBoard()
 async function createBoard() {
-  const collection = await dbService.getCollection('board')
-  const id = ObjectId("61ae5ac3ac14464cd8b38e5b")
+  const collection = await dbService.getCollection("board");
+  const id = ObjectId("61ae5ac3ac14464cd8b38e5b");
   // var currBoard = await collection.updateOne({ _id: id },{$set:{
-  var currBoard = await collection.insertOne(
-    {
+  var currBoard = await collection.insertOne({
       "title": "Sprint 4",
       "createdAt": 1589983468418.0,
       "description": "Track your action items and improve for next sprint",
@@ -114,7 +107,7 @@ async function createBoard() {
       "members": [
         {
           "username": "Sundos",
-          "_id": '61b246112e8f89202bd83308',
+          "_id": "61b246112e8f89202bd83308",
           "password": 12345,
           "fullname": "Sundos Gutty",
           "email": "sundos@gmail.com",
@@ -152,18 +145,21 @@ async function createBoard() {
                 "2021-12-05T22:00:00.000Z",
                 "2021-12-08T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t101",
@@ -185,18 +181,21 @@ async function createBoard() {
                 "2021-12-10T22:00:00.000Z",
                 "2021-12-13T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t103",
@@ -215,18 +214,21 @@ async function createBoard() {
                 "2021-12-10T22:00:00.000Z",
                 "2021-12-14T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "8NeM9",
@@ -239,18 +241,21 @@ async function createBoard() {
               ],
               "members": null,
               "priority": "High",
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             }
           ],
           "style": {
@@ -278,18 +283,21 @@ async function createBoard() {
                 "2021-11-30T22:00:00.000Z",
                 "2021-12-06T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t201",
@@ -300,18 +308,21 @@ async function createBoard() {
                 "2021-12-07T22:00:00.000Z",
                 "2021-12-10T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t202",
@@ -322,23 +333,26 @@ async function createBoard() {
                 "2021-12-10T22:00:00.000Z",
                 "2021-12-13T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             }
           ],
           "style": {
             "color": "#579bfc"
-          },
+          }
         },
         {
           "id": "g103",
@@ -367,18 +381,21 @@ async function createBoard() {
                 "2021-12-14T22:00:00.000Z"
               ],
               "priority": "High",
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t402",
@@ -401,18 +418,21 @@ async function createBoard() {
                 "2021-12-17T22:00:00.000Z"
               ],
               "priority": "Medium",
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             }
           ],
           "style": {
@@ -446,18 +466,21 @@ async function createBoard() {
                 "2021-12-09T22:00:00.000Z"
               ],
               "priority": "Medium",
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t502",
@@ -500,18 +523,21 @@ async function createBoard() {
                 "2021-12-08T22:00:00.000Z",
                 "2021-12-11T22:00:00.000Z"
               ],
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             }
           ],
           "style": {
@@ -541,18 +567,21 @@ async function createBoard() {
                 }
               ],
               "priority": "Low",
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             },
             {
               "id": "t602",
@@ -578,18 +607,21 @@ async function createBoard() {
                 "imgUrl": "guy-img.jpg"
               },
               "style": {},
-              "seenBy":[ {
-                "username": "Sundos",
-                "password": 12345,
-                "fullname": "Sundos Gutty",
-                "email": "sundos@gmail.com",
-                "imgUrl": "sundos-img.jpg"
-              },{
-                "_id": "u101",
-                "username": "Ishay",
-                "fullname": "Ishay Nitzan",
-                "imgUrl": "ishay-img.jpeg"
-              }]
+              "seenBy": [
+                {
+                  "username": "Sundos",
+                  "password": 12345,
+                  "fullname": "Sundos Gutty",
+                  "email": "sundos@gmail.com",
+                  "imgUrl": "sundos-img.jpg"
+                },
+                {
+                  "_id": "u101",
+                  "username": "Ishay",
+                  "fullname": "Ishay Nitzan",
+                  "imgUrl": "ishay-img.jpeg"
+                }
+              ]
             }
           ],
           "style": {
@@ -604,19 +636,13 @@ async function createBoard() {
         "member-picker",
         "timeline-picker"
       ]
-    }
-  )
+    })
 }
-
 
 module.exports = {
   query,
   remove,
   getById,
   update,
-  add
-}
-
-
-
-
+  add,
+};
