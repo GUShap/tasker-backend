@@ -114,6 +114,7 @@ async function createBoard() {
       "members" : [  
           {
               "username" : "Sundos",
+              "_id":'61b246112e8f89202bd83308',
               "password" : 12345,
               "fullname" : "Sundos Gutty",
               "email" : "sundos@gmail.com",
@@ -121,6 +122,7 @@ async function createBoard() {
           }, 
           {
               "username" : "Ishay",
+              "_id":"61b245d82e8f89202bd83307",
               "password" : 12345,
               "fullname" : "Ishay Nitzan",
               "email" : "sundos@gmail.com",

@@ -23,7 +23,7 @@ function connectSockets(http, session) {
             socket.watchedBoard = boardId
         })
         socket.on('board from store', board => {
-            console.log('board from store',board.title)
+            // console.log('board from store',board.title)
             gIo.to(socket.watchedBoard).emit('board updated', board)
         })
 
@@ -35,7 +35,7 @@ function connectSockets(http, session) {
         socket.on('set-user-socket', userId => {
             logger.debug(`Setting (${socket.id}) socket.userId = ${userId}`)
             socket.userId = userId
-            // console.log('user is connected:', socket.userId);
+            console.log('user is connected:', socket.userId);
         })
         socket.on('unset-user-socket', () => {
             delete socket.userId
