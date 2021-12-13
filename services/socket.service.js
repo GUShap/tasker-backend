@@ -4,16 +4,16 @@ const logger = require('./logger.service');
 var gIo = null
 
 function connectSockets(http, session) {
-    gIo = require('socket.io')(http, {
+   gIo = require('socket.io')(http, {
         cors: {
             origin: '*',
         }
     })
     gIo.on('connection', socket => {
-        // console.log('New socket', socket.id)
         socket.on('disconnect', socket => {
-            // console.log('Someone disconnected')
+            // socket.emit('board updated', board)
         })
+
         socket.on('watch board', boardId => {
             if (socket.watchedBoard === boardId) return;
             if (socket.watchedBoard) {
@@ -23,8 +23,11 @@ function connectSockets(http, session) {
             socket.watchedBoard = boardId
         })
         socket.on('board from store', board => {
+            // console.log('board from store',board.title)
             gIo.to(socket.watchedBoard).emit('board updated', board)
         })
+
+
 
         socket.on('user-watch', userId => {
             socket.join('watching:' + userId)
@@ -32,11 +35,12 @@ function connectSockets(http, session) {
         socket.on('set-user-socket', userId => {
             logger.debug(`Setting (${socket.id}) socket.userId = ${userId}`)
             socket.userId = userId
+            console.log('user is connected:', socket.userId);
         })
         socket.on('unset-user-socket', () => {
             delete socket.userId
         })
-
+        
     })
 }
 
