@@ -71,6 +71,7 @@ async function getById(boardId) {
 
 
 function _buildCriteria(filterBy) {
+  console.log(filterBy)
   const criteria = {};
   if (filterBy.searchKey) {
     const regex = new RegExp(filterBy.searchKey, "i");
