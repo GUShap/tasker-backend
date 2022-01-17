@@ -278,6 +278,13 @@ async function createBoard() {
                             "fullname" : "Sundos Gutty",
                             "email" : "sundos@gmail.com",
                             "imgUrl" : "sundos-img.jpg"
+                        }, 
+                        {
+                            "_id" : "61b245d82e8f89202bd83307",
+                            "username" : "Ishay",
+                            "fullname" : "Ishay Nitzan",
+                            "email" : "sundos@gmail.com",
+                            "imgUrl" : "ishay-img.jpeg"
                         }
                     ]
                 }
@@ -652,6 +659,193 @@ async function createBoard() {
                         "id" : "e8NeM9",
                         "title" : "add the new cover"
                     }
+                }, 
+                {
+                    "id" : "5IoDq",
+                    "type" : "title",
+                    "newVal" : "Make test data",
+                    "oldVal" : "Make test data",
+                    "createdAt" : 1639478542386.0,
+                    "task" : {
+                        "id" : "bt102",
+                        "title" : "Make test data"
+                    }
+                }, 
+                {
+                    "id" : "e0YD2",
+                    "type" : "title",
+                    "newVal" : "Send the prototype project",
+                    "oldVal" : "Send the prototype project",
+                    "createdAt" : 1639478542443.0,
+                    "task" : {
+                        "id" : "ct101",
+                        "title" : "Send the prototype project"
+                    }
+                }, 
+                {
+                    "id" : "mdMVH",
+                    "type" : "title",
+                    "newVal" : "Improve connectable",
+                    "oldVal" : "Improve connectable",
+                    "createdAt" : 1639478542597.0,
+                    "task" : {
+                        "id" : "dt10123",
+                        "title" : "Improve connectable"
+                    }
+                }, 
+                {
+                    "id" : "YD0jM",
+                    "type" : "title",
+                    "newVal" : "add the new cover",
+                    "oldVal" : "add the new cover",
+                    "createdAt" : 1639478542679.0,
+                    "task" : {
+                        "id" : "e8NeM9",
+                        "title" : "add the new cover"
+                    }
+                }, 
+                {
+                    "id" : "sBhxr",
+                    "type" : "title",
+                    "newVal" : "Make test data",
+                    "oldVal" : "Make test data",
+                    "createdAt" : 1639478546015.0,
+                    "task" : {
+                        "id" : "bt102",
+                        "title" : "Make test data"
+                    }
+                }, 
+                {
+                    "id" : "VY3tH",
+                    "type" : "title",
+                    "newVal" : "Send the prototype project",
+                    "oldVal" : "Send the prototype project",
+                    "createdAt" : 1639478546165.0,
+                    "task" : {
+                        "id" : "ct101",
+                        "title" : "Send the prototype project"
+                    }
+                }, 
+                {
+                    "id" : "yCyJs",
+                    "type" : "title",
+                    "newVal" : "Improve connectable",
+                    "oldVal" : "Improve connectable",
+                    "createdAt" : 1639478546267.0,
+                    "task" : {
+                        "id" : "dt10123",
+                        "title" : "Improve connectable"
+                    }
+                }, 
+                {
+                    "id" : "RDxNK",
+                    "type" : "title",
+                    "newVal" : "add the new cover",
+                    "oldVal" : "add the new cover",
+                    "createdAt" : 1639478546382.0,
+                    "task" : {
+                        "id" : "e8NeM9",
+                        "title" : "add the new cover"
+                    }
+                }, 
+                {
+                    "id" : "xe03I",
+                    "type" : "title",
+                    "newVal" : "Make test data",
+                    "oldVal" : "Make test data",
+                    "createdAt" : 1639478568521.0,
+                    "task" : {
+                        "id" : "bt102",
+                        "title" : "Make test data"
+                    }
+                }, 
+                {
+                    "id" : "pvLET",
+                    "type" : "title",
+                    "newVal" : "Send the prototype project",
+                    "oldVal" : "Send the prototype project",
+                    "createdAt" : 1639478568541.0,
+                    "task" : {
+                        "id" : "ct101",
+                        "title" : "Send the prototype project"
+                    }
+                }, 
+                {
+                    "id" : "9wpVc",
+                    "type" : "title",
+                    "newVal" : "Improve connectable",
+                    "oldVal" : "Improve connectable",
+                    "createdAt" : 1639478568560.0,
+                    "task" : {
+                        "id" : "dt10123",
+                        "title" : "Improve connectable"
+                    }
+                }, 
+                {
+                    "id" : "dDRrL",
+                    "type" : "title",
+                    "newVal" : "add the new cover",
+                    "oldVal" : "add the new cover",
+                    "createdAt" : 1639478568581.0,
+                    "task" : {
+                        "id" : "e8NeM9",
+                        "title" : "add the new cover"
+                    }
+                }, 
+                {
+                    "id" : "hsziM",
+                    "type" : "title",
+                    "newVal" : "Make test data",
+                    "oldVal" : "Make test data",
+                    "createdAt" : 1639478622635.0,
+                    "task" : {
+                        "id" : "bt102",
+                        "title" : "Make test data"
+                    }
+                }, 
+                {
+                    "id" : "2xctS",
+                    "type" : "title",
+                    "newVal" : "Send the prototype project",
+                    "oldVal" : "Send the prototype project",
+                    "createdAt" : 1639478622663.0,
+                    "task" : {
+                        "id" : "ct101",
+                        "title" : "Send the prototype project"
+                    }
+                }, 
+                {
+                    "id" : "DKKlJ",
+                    "type" : "title",
+                    "newVal" : "Improve connectable",
+                    "oldVal" : "Improve connectable",
+                    "createdAt" : 1639478622688.0,
+                    "task" : {
+                        "id" : "dt10123",
+                        "title" : "Improve connectable"
+                    }
+                }, 
+                {
+                    "id" : "zpC9T",
+                    "type" : "title",
+                    "newVal" : "add the new cover",
+                    "oldVal" : "add the new cover",
+                    "createdAt" : 1639478622725.0,
+                    "task" : {
+                        "id" : "e8NeM9",
+                        "title" : "add the new cover"
+                    }
+                }, 
+                {
+                    "id" : "kUwS2",
+                    "type" : "title",
+                    "newVal" : "add the new cover",
+                    "oldVal" : "add the new cover",
+                    "createdAt" : 1639479160734.0,
+                    "task" : {
+                        "id" : "e8NeM9",
+                        "title" : "add the new cover"
+                    }
                 }
             ]
         }, 
@@ -721,6 +915,13 @@ async function createBoard() {
                             "fullname" : "Sundos Gutty",
                             "email" : "sundos@gmail.com",
                             "imgUrl" : "sundos-img.jpg"
+                        }, 
+                        {
+                            "_id" : "61b245d82e8f89202bd83307",
+                            "username" : "Ishay",
+                            "fullname" : "Ishay Nitzan",
+                            "email" : "sundos@gmail.com",
+                            "imgUrl" : "ishay-img.jpeg"
                         }
                     ],
                     "members" : [ 
@@ -763,6 +964,13 @@ async function createBoard() {
                             "_id" : "u103",
                             "username" : "Ishay",
                             "fullname" : "Ishay Nitzan",
+                            "imgUrl" : "ishay-img.jpeg"
+                        }, 
+                        {
+                            "_id" : "61b245d82e8f89202bd83307",
+                            "username" : "Ishay",
+                            "fullname" : "Ishay Nitzan",
+                            "email" : "sundos@gmail.com",
                             "imgUrl" : "ishay-img.jpeg"
                         }
                     ],
@@ -1126,6 +1334,160 @@ async function createBoard() {
                         "id" : "ht201",
                         "title" : "Change color plate for logo"
                     }
+                }, 
+                {
+                    "id" : "GiJFX",
+                    "type" : "title",
+                    "newVal" : "Finalize project",
+                    "oldVal" : "Finalize project",
+                    "createdAt" : 1639478542731.0,
+                    "task" : {
+                        "id" : "gt104",
+                        "title" : "Finalize project"
+                    }
+                }, 
+                {
+                    "id" : "jGozw",
+                    "type" : "title",
+                    "newVal" : "Change color plate for logo",
+                    "oldVal" : "Change color plate for logo",
+                    "createdAt" : 1639478542822.0,
+                    "task" : {
+                        "id" : "ht201",
+                        "title" : "Change color plate for logo"
+                    }
+                }, 
+                {
+                    "id" : "2py7Z",
+                    "type" : "title",
+                    "newVal" : "Recruit new members",
+                    "oldVal" : "Recruit new members",
+                    "createdAt" : 1639478542877.0,
+                    "task" : {
+                        "id" : "it202",
+                        "title" : "Recruit new members"
+                    }
+                }, 
+                {
+                    "id" : "SDPnj",
+                    "type" : "title",
+                    "newVal" : "Finalize project",
+                    "oldVal" : "Finalize project",
+                    "createdAt" : 1639478546538.0,
+                    "task" : {
+                        "id" : "gt104",
+                        "title" : "Finalize project"
+                    }
+                }, 
+                {
+                    "id" : "jV6yI",
+                    "type" : "title",
+                    "newVal" : "Change color plate for logo",
+                    "oldVal" : "Change color plate for logo",
+                    "createdAt" : 1639478546745.0,
+                    "task" : {
+                        "id" : "ht201",
+                        "title" : "Change color plate for logo"
+                    }
+                }, 
+                {
+                    "id" : "73ib7",
+                    "type" : "title",
+                    "newVal" : "Recruit new members",
+                    "oldVal" : "Recruit new members",
+                    "createdAt" : 1639478546978.0,
+                    "task" : {
+                        "id" : "it202",
+                        "title" : "Recruit new members"
+                    }
+                }, 
+                {
+                    "id" : "CqEaC",
+                    "type" : "title",
+                    "newVal" : "Finalize project",
+                    "oldVal" : "Finalize project",
+                    "createdAt" : 1639478568599.0,
+                    "task" : {
+                        "id" : "gt104",
+                        "title" : "Finalize project"
+                    }
+                }, 
+                {
+                    "id" : "QHPvJ",
+                    "type" : "title",
+                    "newVal" : "Change color plate for logo",
+                    "oldVal" : "Change color plate for logo",
+                    "createdAt" : 1639478568619.0,
+                    "task" : {
+                        "id" : "ht201",
+                        "title" : "Change color plate for logo"
+                    }
+                }, 
+                {
+                    "id" : "Li0E7",
+                    "type" : "title",
+                    "newVal" : "Recruit new members",
+                    "oldVal" : "Recruit new members",
+                    "createdAt" : 1639478568635.0,
+                    "task" : {
+                        "id" : "it202",
+                        "title" : "Recruit new members"
+                    }
+                }, 
+                {
+                    "id" : "xLURO",
+                    "type" : "title",
+                    "newVal" : "Finalize project",
+                    "oldVal" : "Finalize project",
+                    "createdAt" : 1639478622761.0,
+                    "task" : {
+                        "id" : "gt104",
+                        "title" : "Finalize project"
+                    }
+                }, 
+                {
+                    "id" : "YBhtW",
+                    "type" : "title",
+                    "newVal" : "Change color plate for logo",
+                    "oldVal" : "Change color plate for logo",
+                    "createdAt" : 1639478622788.0,
+                    "task" : {
+                        "id" : "ht201",
+                        "title" : "Change color plate for logo"
+                    }
+                }, 
+                {
+                    "id" : "DaRF9",
+                    "type" : "title",
+                    "newVal" : "Recruit new members",
+                    "oldVal" : "Recruit new members",
+                    "createdAt" : 1639478622809.0,
+                    "task" : {
+                        "id" : "it202",
+                        "title" : "Recruit new members"
+                    }
+                }, 
+                {
+                    "id" : "sslJw",
+                    "type" : "title",
+                    "newVal" : "Change color plate for logo",
+                    "oldVal" : "Change color plate for logo",
+                    "createdAt" : 1639479164271.0,
+                    "task" : {
+                        "id" : "ht201",
+                        "title" : "Change color plate for logo"
+                    }
+                }, 
+                {
+                    "id" : "z0uBH",
+                    "type" : "title",
+                    "newVal" : "Recruit new members",
+                    "oldVal" : "Recruit new members",
+                    "createdAt" : 1639479167284.0,
+                    "task" : {
+                        "id" : "it202",
+                        "title" : "Recruit new members"
+                    }
                 }
             ]
         }, 
@@ -1215,6 +1577,13 @@ async function createBoard() {
                             "username" : "Ishay",
                             "fullname" : "Ishay Nitzan",
                             "imgUrl" : "ishay-img.jpeg"
+                        }, 
+                        {
+                            "_id" : "61b246112e8f89202bd83308",
+                            "username" : "Sundos",
+                            "fullname" : "Sundos Gutty",
+                            "email" : "sundos@gmail.com",
+                            "imgUrl" : "sundos-img.jpg"
                         }
                     ]
                 }
@@ -1372,6 +1741,710 @@ async function createBoard() {
                     "newVal" : "Contact NY base for leads",
                     "oldVal" : "Contact NY base for leads",
                     "createdAt" : 1639477652052.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "vX948",
+                    "type" : "title",
+                    "newVal" : "make new spreadsheet",
+                    "oldVal" : "make new spreadsheet",
+                    "createdAt" : 1639478542954.0,
+                    "task" : {
+                        "id" : "kt301",
+                        "title" : "make new spreadsheet"
+                    }
+                }, 
+                {
+                    "id" : "7L70B",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478543000.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "1o5pI",
+                    "type" : "title",
+                    "newVal" : "make new spreadsheet",
+                    "oldVal" : "make new spreadsheet",
+                    "createdAt" : 1639478547131.0,
+                    "task" : {
+                        "id" : "kt301",
+                        "title" : "make new spreadsheet"
+                    }
+                }, 
+                {
+                    "id" : "Pw4Ts",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478549492.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "7BZSD",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478550099.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "4r9SL",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478550515.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "QcHsU",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478550799.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "uSPyD",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478551263.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "Sijuj",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478551522.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "2gXWZ",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478551756.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "ZL8Yg",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478552178.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "6Z7gU",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478552356.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "dX9wh",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478552609.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "yhX7T",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478552849.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "J9KMR",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478553032.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "CId35",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478553303.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "EieHx",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478553526.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "32S9X",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478553750.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "XJJl2",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478553983.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "ACRSE",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478554248.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "aBUHQ",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478554462.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "jwq64",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478554680.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "knNa0",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478554962.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "FlV2y",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478555182.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "fzpRi",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478555457.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "iJvx4",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478555685.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "gTE62",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478555905.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "OW15d",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478556190.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "uizAj",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478556656.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "NVrzb",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478556923.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "mwUtK",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478557164.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "1RtkD",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478557413.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "Ud1qn",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478557679.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "dw9ds",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478558239.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "nVBSQ",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478558533.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "UwALh",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478558865.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "G6aFA",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478559047.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "mpcZP",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478559174.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "Jtjzp",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478559462.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "Gcr2L",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478559747.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "ek5Q8",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478560064.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "Sp9ux",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478560273.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "WpJXe",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478560569.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "pxcPr",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478560810.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "8TT4J",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478561008.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "8MED8",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478561340.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "KZC8i",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478561523.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "0NfiR",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478561834.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "PRW6G",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478562042.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "MsIC6",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478562248.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "S6N5h",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478562565.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "rYzP8",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478562850.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "aR8gX",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478563067.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "4goyC",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478563385.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "5fnMZ",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478563577.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "5hYUR",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478563805.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "gcXMX",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478564124.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "pxjCU",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478564383.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "HRx8m",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478564686.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "u5IbS",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478565013.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "XHRZJ",
+                    "type" : "title",
+                    "newVal" : "make new spreadsheet",
+                    "oldVal" : "make new spreadsheet",
+                    "createdAt" : 1639478568657.0,
+                    "task" : {
+                        "id" : "kt301",
+                        "title" : "make new spreadsheet"
+                    }
+                }, 
+                {
+                    "id" : "oKaPu",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478568684.0,
+                    "task" : {
+                        "id" : "lt402",
+                        "title" : "Contact NY base for leads"
+                    }
+                }, 
+                {
+                    "id" : "Qv2WV",
+                    "type" : "title",
+                    "newVal" : "make new spreadsheet",
+                    "oldVal" : "make new spreadsheet",
+                    "createdAt" : 1639478622838.0,
+                    "task" : {
+                        "id" : "kt301",
+                        "title" : "make new spreadsheet"
+                    }
+                }, 
+                {
+                    "id" : "jXdCx",
+                    "type" : "title",
+                    "newVal" : "Contact NY base for leads",
+                    "oldVal" : "Contact NY base for leads",
+                    "createdAt" : 1639478622859.0,
                     "task" : {
                         "id" : "lt402",
                         "title" : "Contact NY base for leads"
@@ -1632,6 +2705,61 @@ async function createBoard() {
                     "newVal" : "Water the plants",
                     "oldVal" : "Water the plants",
                     "createdAt" : 1639477637258.0,
+                    "task" : {
+                        "id" : "ot502",
+                        "title" : "Water the plants"
+                    }
+                }, 
+                {
+                    "id" : "z8ezj",
+                    "type" : "title",
+                    "newVal" : "The coffee machine is great!",
+                    "oldVal" : "The coffee machine is great!",
+                    "createdAt" : 1639478543111.0,
+                    "task" : {
+                        "id" : "n501",
+                        "title" : "The coffee machine is great!"
+                    }
+                }, 
+                {
+                    "id" : "zZmgv",
+                    "type" : "title",
+                    "newVal" : "The coffee machine is great!",
+                    "oldVal" : "The coffee machine is great!",
+                    "createdAt" : 1639478568707.0,
+                    "task" : {
+                        "id" : "n501",
+                        "title" : "The coffee machine is great!"
+                    }
+                }, 
+                {
+                    "id" : "ahXcI",
+                    "type" : "title",
+                    "newVal" : "Water the plants",
+                    "oldVal" : "Water the plants",
+                    "createdAt" : 1639478568736.0,
+                    "task" : {
+                        "id" : "ot502",
+                        "title" : "Water the plants"
+                    }
+                }, 
+                {
+                    "id" : "R7KWj",
+                    "type" : "title",
+                    "newVal" : "The coffee machine is great!",
+                    "oldVal" : "The coffee machine is great!",
+                    "createdAt" : 1639478622885.0,
+                    "task" : {
+                        "id" : "n501",
+                        "title" : "The coffee machine is great!"
+                    }
+                }, 
+                {
+                    "id" : "4IR2V",
+                    "type" : "title",
+                    "newVal" : "Water the plants",
+                    "oldVal" : "Water the plants",
+                    "createdAt" : 1639478622911.0,
                     "task" : {
                         "id" : "ot502",
                         "title" : "Water the plants"
@@ -1923,6 +3051,50 @@ async function createBoard() {
                     "newVal" : "Get server up and running",
                     "oldVal" : "Get server up and running",
                     "createdAt" : 1639477637299.0,
+                    "task" : {
+                        "id" : "rt602",
+                        "title" : "Get server up and running"
+                    }
+                }, 
+                {
+                    "id" : "xkaEP",
+                    "type" : "title",
+                    "newVal" : "Send fiscal quarter",
+                    "oldVal" : "Send fiscal quarter",
+                    "createdAt" : 1639478568762.0,
+                    "task" : {
+                        "id" : "q601",
+                        "title" : "Send fiscal quarter"
+                    }
+                }, 
+                {
+                    "id" : "LfWvq",
+                    "type" : "title",
+                    "newVal" : "Get server up and running",
+                    "oldVal" : "Get server up and running",
+                    "createdAt" : 1639478568787.0,
+                    "task" : {
+                        "id" : "rt602",
+                        "title" : "Get server up and running"
+                    }
+                }, 
+                {
+                    "id" : "xA03j",
+                    "type" : "title",
+                    "newVal" : "Send fiscal quarter",
+                    "oldVal" : "Send fiscal quarter",
+                    "createdAt" : 1639478622937.0,
+                    "task" : {
+                        "id" : "q601",
+                        "title" : "Send fiscal quarter"
+                    }
+                }, 
+                {
+                    "id" : "at1iq",
+                    "type" : "title",
+                    "newVal" : "Get server up and running",
+                    "oldVal" : "Get server up and running",
+                    "createdAt" : 1639478622964.0,
                     "task" : {
                         "id" : "rt602",
                         "title" : "Get server up and running"
