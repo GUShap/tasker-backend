@@ -6,6 +6,10 @@ const expressSession = require('express-session')
 const app = express()
 const http = require('http').createServer(app)
 
+// var bodyParser = require('body-parser')
+// app.use(bodyParser.json({limit: '10mb', extended: true}))
+// app.use(bodyParser.urlencoded({limit: '10mb', extended: true}))
+
 // Express App Config
 const session = expressSession({
     secret: 'coding is amazing',
@@ -25,6 +29,7 @@ if (process.env.NODE_ENV === 'production') {
     }
     app.use(cors(corsOptions))
 }
+
 
 const authRoutes = require('./api/auth/auth.routes')
 const userRoutes = require('./api/user/user.routes')

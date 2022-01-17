@@ -37,7 +37,7 @@ async function addBoard(req, res) {
         res.json(addedBoard)
 
     } catch (err) {
-        console.log(err)
+        console.log("err",err)
         logger.error('Failed to add board', err)
         res.status(500).send({ err: 'Failed to add board' })
     }
