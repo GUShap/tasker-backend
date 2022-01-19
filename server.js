@@ -17,8 +17,11 @@ const session = expressSession({
     saveUninitialized: true,
     cookie: { secure: false }
 })
+
 app.use(express.json())
 app.use(session)
+
+
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.resolve(__dirname, './public/')))
