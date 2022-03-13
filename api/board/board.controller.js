@@ -4,7 +4,7 @@ const socketService = require('../../services/socket.service')
 const boardService = require('./board.service')
 
 
-// GET LIST
+// GET BOARDS LIST
 async function getBoards(req, res) {
     try {
         const boards = await boardService.query(req.query)
@@ -15,8 +15,7 @@ async function getBoards(req, res) {
     }
 }
 
-
-// GET BY ID 
+// GET BOARD BY ID 
 async function getBoardById(req, res) {
     try {
       const {boardId} = req.params;
@@ -28,7 +27,6 @@ async function getBoardById(req, res) {
     }
   }
 
-
 // POST (add board)
 async function addBoard(req, res) {
     try {
@@ -37,13 +35,11 @@ async function addBoard(req, res) {
         res.json(addedBoard)
 
     } catch (err) {
-        console.log(err)
+        console.log("err",err)
         logger.error('Failed to add board', err)
         res.status(500).send({ err: 'Failed to add board' })
     }
 }
-
-
 
 // PUT (Update board)
 async function updateBoard(req, res) {
